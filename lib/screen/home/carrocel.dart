@@ -53,7 +53,7 @@ class _CarrocelState extends State<Carrocel> {
     return CarouselSlider(
       items: imageSliders,
       options: CarouselOptions(
-          scrollPhysics: NeverScrollableScrollPhysics(),
+          scrollPhysics: PageScrollPhysics(),
           enlargeCenterPage: true,
           aspectRatio:
               ResponsiveWidget.isSmallScreen(context) ? 13 / 8 : 35 / 8,

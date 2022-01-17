@@ -76,7 +76,7 @@ class _PrincipalState extends State<Principal> {
         //isSelected: true,
       ),
       CollapsibleItem(
-        text: 'Expecifiações',
+        text: 'Expecificações',
         icon: Icons.space_dashboard,
         onPressed: () =>
             setState(() => Navigator.pushNamed(context, '/expecifica')),

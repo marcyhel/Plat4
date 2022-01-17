@@ -16,21 +16,19 @@ class CustonLinha extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: 50, top: 7, bottom: 7),
-      width: MediaQuery.of(context).size.width / 1.8,
       child: Row(
         children: [
-          SizedBox(
+          Container(
             width: 100,
-            child: Expanded(
-              child: Text(
-                sigla,
-                style: cor == '1'
-                    ? TextStyle(color: Theme.of(context).canvasColor)
-                    : null,
-              ),
+            child: Text(
+              sigla,
+              style: cor == '1'
+                  ? TextStyle(color: Theme.of(context).canvasColor)
+                  : null,
             ),
           ),
-          Expanded(
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
             child: Text(
               texto,
               style: cor == '1'
@@ -262,12 +260,11 @@ class LargExplicacao extends StatelessWidget {
                   ),
                 ),
                 IntrinsicWidth(
-                  child: Expanded(
-                    child: Container(
-                      color: Colors.blueGrey[400],
-                      width: 3,
-                      //height: 600,
-                    ),
+                  child: Container(
+                    width: 3,
+                    color: Colors.blueGrey[400],
+
+                    //height: 600,
                   ),
                 ),
                 Column(
@@ -309,12 +306,11 @@ class LargExplicacao extends StatelessWidget {
                   ),
                 ),
                 IntrinsicWidth(
-                  child: Expanded(
-                    child: Container(
-                      color: Colors.blueGrey[400],
-                      width: 3,
-                      //height: 600,
-                    ),
+                  child: Container(
+                    width: 3,
+                    color: Colors.blueGrey[400],
+
+                    //height: 600,
                   ),
                 ),
                 Column(
@@ -356,12 +352,11 @@ class LargExplicacao extends StatelessWidget {
                   ),
                 ),
                 IntrinsicWidth(
-                  child: Expanded(
-                    child: Container(
-                      color: Colors.blueGrey[400],
-                      width: 3,
-                      //height: 600,
-                    ),
+                  child: Container(
+                    width: 3,
+                    color: Colors.blueGrey[400],
+
+                    //height: 600,
                   ),
                 ),
                 Column(

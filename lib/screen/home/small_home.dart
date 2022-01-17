@@ -33,29 +33,10 @@ class _SmallHomePageState extends State<SmallHomePage> {
         child: Column(
           children: [
             Carrocel(),
-            Container(
-              height: 200,
-              width: double.infinity,
-              child: Swiper(
-                autoplayDelay: 7000,
-                duration: 1500,
-                itemBuilder: (BuildContext context, int index) {
-                  return Image.network(
-                    images[index],
-                    fit: BoxFit.cover,
-                  );
-                },
-                autoplay: true,
-                itemCount: images.length,
-                scrollDirection: Axis.horizontal,
-                pagination: SwiperPagination(alignment: Alignment.centerRight),
-                control: SwiperControl(color: Colors.amber),
-              ),
-            ),
             const SizedBox(height: 50),
             Container(
-              width: MediaQuery.of(context).size.width / 4,
-              child: Card2(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: Card3(
                 titulo: "Balanço Hídrico",
                 descricao:
                     'Balanço Hídrico de Cultivo específico de uma cultura',
@@ -65,8 +46,8 @@ class _SmallHomePageState extends State<SmallHomePage> {
               ),
             ),
             Container(
-                width: MediaQuery.of(context).size.width / 4,
-                child: Card2(
+                width: MediaQuery.of(context).size.width / 1.3,
+                child: Card3(
                   titulo: "Como funciona ?",
                   descricao: 'O que precisa pra funcionar',
                   resumo:
@@ -74,8 +55,8 @@ class _SmallHomePageState extends State<SmallHomePage> {
                   img: '2.jpg',
                 )),
             Container(
-              width: MediaQuery.of(context).size.width / 4,
-              child: Card2(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: Card3(
                 titulo: "Pra quem é esse Software",
                 descricao: 'Pra quem é esse Software',
                 resumo:
@@ -84,12 +65,12 @@ class _SmallHomePageState extends State<SmallHomePage> {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width / 4,
-              child: Card2(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: Card3(
                 titulo: "Beneficios",
                 descricao: 'Beneficios para sua empresa',
                 resumo:
-                    "o balanço hídrico agrega eficiência à irrigação na medida em que, contabilizado, estima a relação entre quantidade de água e tempo de irrigação para as culturas. Todavia, a garantia de que as vantagens elencadas até aqui sejam obtidas no cultivo, é fundamental que o mapeamento da previsão do deficit hídrico seja feito adequadamente — evitando o desperdício de recursos hídricos, por exemplo.",
+                    "O balanço hídrico agrega eficiência à irrigação na medida em que, contabilizado, estima a relação entre quantidade de água e tempo de irrigação para as culturas. Todavia, a garantia de que as vantagens elencadas até aqui sejam obtidas no cultivo, é fundamental que o mapeamento da previsão do deficit hídrico seja feito adequadamente — evitando o desperdício de recursos hídricos, por exemplo.",
                 img: '4.jpg',
               ),
             ),
@@ -103,8 +84,8 @@ class _SmallHomePageState extends State<SmallHomePage> {
               ),
             ),*/
             Container(
-              width: MediaQuery.of(context).size.width / 4,
-              child: Card2(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: Card3(
                 titulo: "INMET",
                 descricao: 'Sobre a API do INMET',
                 resumo:
@@ -167,13 +148,11 @@ class Card3 extends StatelessWidget {
 
     buildCollapsed2() {
       return Container(
-        height: 100,
-        width: double.infinity,
-        child: Expanded(
-          child: Image.asset(
-            'assets/' + img,
-            fit: BoxFit.cover,
-          ),
+        height: 120,
+        width: MediaQuery.of(context).size.width,
+        child: Image.asset(
+          'assets/' + img,
+          fit: BoxFit.cover,
         ),
       ); //buildImg(Colors.lightGreenAccent, 150);
     }
@@ -208,12 +187,10 @@ class Card3 extends StatelessWidget {
     buildExpanded2() {
       return Container(
         height: 120,
-        width: double.infinity,
-        child: Expanded(
-          child: Image.asset(
-            'assets/' + img,
-            fit: BoxFit.cover,
-          ),
+        width: MediaQuery.of(context).size.width,
+        child: Image.asset(
+          'assets/' + img,
+          fit: BoxFit.cover,
         ),
       );
     }
@@ -225,7 +202,7 @@ class Card3 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'lorem sdkljal dfjdksndfk sdjkfhsdkfsdhfk sjdkfshdfksd k sfh sdjkhf jksd fdhsk hfkd',
+              resumo,
               softWrap: true,
             ),
           ],

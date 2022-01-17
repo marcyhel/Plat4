@@ -30,31 +30,6 @@ class _LargHomePageState extends State<LargHomePage> {
         child: Column(
           children: [
             Carrocel(),
-            Container(
-              height: 300,
-              width: double.infinity,
-              child: Swiper(
-                autoplayDelay: 7000,
-                duration: 1500,
-                itemBuilder: (BuildContext context, int index) {
-                  return Image.network(
-                    images[index],
-                    fit: BoxFit.cover,
-                  );
-                },
-
-                // indicatorLayout: PageIndicatorLayout.,
-                autoplay: true,
-                itemCount: images.length,
-                scrollDirection: Axis.horizontal,
-                pagination: SwiperPagination(alignment: Alignment.centerRight),
-                //control: SwiperControl(color: Colors.white),
-
-                plugins: [
-                  SwiperControl(color: Colors.white),
-                ],
-              ),
-            ),
             const SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -103,7 +78,7 @@ class _LargHomePageState extends State<LargHomePage> {
                     titulo: "Beneficios",
                     descricao: 'Beneficios para sua empresa',
                     resumo:
-                        "o balanço hídrico agrega eficiência à irrigação na medida em que, contabilizado, estima a relação entre quantidade de água e tempo de irrigação para as culturas. Todavia, a garantia de que as vantagens elencadas até aqui sejam obtidas no cultivo, é fundamental que o mapeamento da previsão do deficit hídrico seja feito adequadamente — evitando o desperdício de recursos hídricos, por exemplo.",
+                        "O balanço hídrico agrega eficiência à irrigação na medida em que, contabilizado, estima a relação entre quantidade de água e tempo de irrigação para as culturas. Todavia, a garantia de que as vantagens elencadas até aqui sejam obtidas no cultivo, é fundamental que o mapeamento da previsão do deficit hídrico seja feito adequadamente — evitando o desperdício de recursos hídricos, por exemplo.",
                     img: '4.jpg',
                   ),
                 ),
