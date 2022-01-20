@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <application
-        android:label="Balanço Hídrico para Culturas"
+        android:label="Salva Safra - Software para cálculo do Balanço Hídrico para Cultivo (BHC)"
         android:icon="@mipmap/ic_launcher">
         <!--<uses-permission android:name="android.permission.INTERNET" />-->
     

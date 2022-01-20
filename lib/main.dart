@@ -33,15 +33,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Balanço Hídrico para Culturas',
+      title: 'Salva Safra - Software para cálculo do Balanço Hídrico para Cultivo (BHC)',
       theme: lightThemeData,
       darkTheme: darkThemeData,
       themeMode: EasyDynamicTheme.of(context).themeMode,
       initialRoute: '/',
       routes: {
-        // When navigating to the "/" route, build the FirstScreen widget.
+       
         '/': (context) => Load(),
-        // When navigating to the "/second" route, build the SecondScreen widget.
+        
         '/home': (context) => Principal(indexx: 0),
         '/clima': (context) => Principal(indexx: 1),
         '/expecifica': (context) => Principal(indexx: 2),

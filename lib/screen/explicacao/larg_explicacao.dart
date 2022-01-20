@@ -137,7 +137,7 @@ class LargExplicacao extends StatelessWidget {
         children: [
           const SizedBox(height: 40),
           const Text(
-            'Instruções Gerai',
+            'Instruções Gerais',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 40,
